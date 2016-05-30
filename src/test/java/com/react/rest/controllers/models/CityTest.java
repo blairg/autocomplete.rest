@@ -13,13 +13,14 @@ public class CityTest {
 
         //Arrange
         City city;
+        String id = "1";
         String name = "Leeds";
 
         //Act
-        city = new City(name);
+        city = new City(id, name);
 
         //Assert
-        Assert.assertEquals("City[id=null, name='" + name + "']", city.toString());
+        Assert.assertEquals("City[id=" + id + ", name='" + name + "']", city.toString());
 
     }
 }

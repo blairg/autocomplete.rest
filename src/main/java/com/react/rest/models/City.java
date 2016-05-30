@@ -13,7 +13,8 @@ public class City {
 
     public City() {}
 
-    public City(String name) {
+    public City(String id, String name) {
+        this.id = id;
         this.name = name;
     }
 

@@ -1,24 +1,44 @@
 package com.react.rest.controllers;
 
+import com.react.rest.exceptionHandlers.CityNotFoundException;
 import com.react.rest.models.City;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import com.react.service.services.ICityService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
+import java.net.UnknownHostException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by bga11 on 22/05/2016.
  */
 @RestController
-public class CityController {
+@RequestMapping("/api/city")
+public class CityController extends BaseController<com.react.data.entities.City, City> {
 
-    @RequestMapping("/api/city/{name}")
-    public List<City> get(@RequestParam(value = "name", defaultValue = "World") @PathVariable("name") String name) {
-        /* model.addAttribute("name", name); */
-        return Arrays.asList(new City("London"), new City("Manchester"));
+    private final ICityService service;
+
+    @Autowired
+    CityController(ICityService service) {
+        this.service = service;
     }
 
+    //todo: TEST ME
+    @RequestMapping(value = "findAllStartsWith/{name}", method = RequestMethod.GET)
+    List<City> findAllStartsWith(@PathVariable("name") String name) throws UnknownHostException {
+        return ConvertEntitiesToModels(service.findAllStartsWith(name));
+    }
+
+    //todo: TEST ME
+    @Override
+    public List<City> ConvertEntitiesToModels(List<com.react.data.entities.City> cities){
+        return cities.stream().map(city -> new City(city.getId(), city.getName())).collect(Collectors.toList());
+    }
+
+    @ExceptionHandler
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public void handleCityNotFound(CityNotFoundException ex) {
+    }
 }
