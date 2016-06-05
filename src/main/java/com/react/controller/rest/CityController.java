@@ -1,8 +1,8 @@
-package com.react.rest.controllers;
+package com.react.controller.rest;
 
-import com.react.rest.exceptionHandlers.CityNotFoundException;
-import com.react.rest.models.City;
-import com.react.service.services.ICityService;
+import com.react.controller.models.City;
+import com.react.controller.exceptionHandlers.CityNotFoundException;
+import com.react.service.ICityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -11,12 +11,9 @@ import java.net.UnknownHostException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by bga11 on 22/05/2016.
- */
 @RestController
 @RequestMapping("/api/city")
-public class CityController extends BaseController<com.react.data.entities.City, City> {
+public class CityController extends BaseController<com.react.db.entity.City, City> {
 
     private final ICityService service;
 
@@ -33,7 +30,7 @@ public class CityController extends BaseController<com.react.data.entities.City,
 
     //todo: TEST ME
     @Override
-    public List<City> ConvertEntitiesToModels(List<com.react.data.entities.City> cities){
+    public List<City> ConvertEntitiesToModels(List<com.react.db.entity.City> cities){
         return cities.stream().map(city -> new City(city.getId(), city.getName())).collect(Collectors.toList());
     }
 

@@ -1,10 +1,10 @@
-package com.react.data.repositories.impl;
+package com.react.db.repository.impl;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
-import com.react.data.entities.City;
-import com.react.data.repositories.ICityRepository;
+import com.react.db.entity.City;
+import com.react.db.repository.ICityRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
@@ -13,9 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-/**
- * Created by bga11 on 22/05/2016.
- */
 @Repository
 public class CityRepository extends BaseRepository implements ICityRepository  {
 

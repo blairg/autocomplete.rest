@@ -1,4 +1,4 @@
-package com.react.data.repositories.impl;
+package com.react.db.repository.impl;
 
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -8,9 +8,6 @@ import org.springframework.beans.factory.annotation.Value;
 
 import java.net.UnknownHostException;
 
-/**
- * Created by bga11 on 25/05/2016.
- */
 public class BaseRepository {
 
     @Value("${spring.data.mongodb.username}")

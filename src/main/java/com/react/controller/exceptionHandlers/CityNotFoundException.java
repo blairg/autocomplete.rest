@@ -1,8 +1,4 @@
-package com.react.rest.exceptionHandlers;
-
-/**
- * Created by bga11 on 25/05/2016.
- */
+package com.react.controller.exceptionHandlers;
 
 public class CityNotFoundException extends Exception
 {

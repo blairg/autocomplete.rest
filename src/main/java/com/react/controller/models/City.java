@@ -1,10 +1,7 @@
-package com.react.rest.models;
+package com.react.controller.models;
 
 import org.springframework.data.annotation.Id;
 
-/**
- * Created by bga11 on 22/05/2016.
- */
 public class City {
     @Id
     private String id;

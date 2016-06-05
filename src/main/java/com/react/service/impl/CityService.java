@@ -1,17 +1,14 @@
-package com.react.service.services.impl;
+package com.react.service.impl;
 
-import com.react.data.entities.City;
-import com.react.data.repositories.ICityRepository;
-import com.react.service.services.ICityService;
+import com.react.db.entity.City;
+import com.react.db.repository.ICityRepository;
+import com.react.service.ICityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.net.UnknownHostException;
 import java.util.List;
 
-/**
- * Created by bga11 on 22/05/2016.
- */
 @Service
 public class CityService implements ICityService {
     private final ICityRepository repository;
