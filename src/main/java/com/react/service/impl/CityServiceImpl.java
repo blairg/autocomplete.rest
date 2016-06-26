@@ -1,8 +1,8 @@
 package com.react.service.impl;
 
 import com.react.db.entity.City;
-import com.react.db.repository.ICityRepository;
-import com.react.service.ICityService;
+import com.react.db.repository.CityRepository;
+import com.react.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,11 +10,11 @@ import java.net.UnknownHostException;
 import java.util.List;
 
 @Service
-public class CityService implements ICityService {
-    private final ICityRepository repository;
+public class CityServiceImpl implements CityService {
+    private final CityRepository repository;
 
     @Autowired
-    CityService(ICityRepository repository)
+    CityServiceImpl(CityRepository repository)
     {
         this.repository = repository;
     }

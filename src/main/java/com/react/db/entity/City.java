@@ -4,11 +4,9 @@ import org.springframework.data.annotation.Id;
 
 public class City {
     @Id
-    private String id;
+    private final String id;
 
-    private String name;
-
-    public City() {}
+    private final String name;
 
     private City(Builder builder) {
         this.id = builder.id;
@@ -28,29 +26,13 @@ public class City {
         return String.format("City[id=%s, name='%s']", id, name);
     }
 
-    static Builder getBuilder() {
-        return new Builder();
-    }
-
     public static class Builder {
-        private String id;
-        private String name;
-
-        private Builder() {}
+        private final String id;
+        private final String name;
 
         public Builder(String id, String name) {
             this.id = id;
             this.name = name;
-        }
-
-        public Builder id(String id) {
-            this.id = id;
-            return this;
-        }
-
-        public Builder name(String name) {
-            this.name = name;
-            return this;
         }
 
         public City build() {

@@ -1,8 +1,8 @@
 package com.react.controller.rest;
 
-import com.react.controller.models.City;
 import com.react.controller.exceptionHandlers.CityNotFoundException;
-import com.react.service.ICityService;
+import com.react.controller.models.City;
+import com.react.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -15,10 +15,10 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/city")
 public class CityController extends BaseController<com.react.db.entity.City, City> {
 
-    private final ICityService service;
+    private final CityService service;
 
     @Autowired
-    CityController(ICityService service) {
+    CityController(CityService service) {
         this.service = service;
     }
 
