@@ -33,15 +33,18 @@ public class AbstractMongoDBTest extends TestCase {
     @Before
     public void setUp() throws Exception {
 
+        Thread.sleep(200);
+        int port = Network.getFreeServerPort();
+
         _mongodExe = starter.prepare(new MongodConfigBuilder()
                 .version(Version.Main.PRODUCTION)
-                .net(new Net(12345, Network.localhostIsIPv6()))
+                .net(new Net(port, Network.localhostIsIPv6()))
                 .build());
         _mongod = _mongodExe.start();
 
         super.setUp();
 
-        _mongo = new MongoClient("localhost", 12345);
+        _mongo = new MongoClient("localhost", port);
         DB database = _mongo.getDB("test");
         _dbCollection = database.getCollection("City");
     }
@@ -51,6 +54,7 @@ public class AbstractMongoDBTest extends TestCase {
     public void tearDown() throws Exception {
         super.tearDown();
 
+        Thread.sleep(200);
         _mongod.stop();
         _mongodExe.stop();
     }

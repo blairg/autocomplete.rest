@@ -9,15 +9,15 @@ public class CityTest {
     @Test
     public void ensureCityEntityCanBuild() {
 
-        //Arrange
+        //given
         City city;
         String id = "1";
         String name = "Leeds";
 
-        //Act
+        //when
         city = new City.Builder(id, name).build();
 
-        //Assert
+        //then
         assertEquals("City[id=" + id + ", name='" + name + "']", city.toString());
 
     }
