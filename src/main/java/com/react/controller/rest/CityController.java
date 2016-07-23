@@ -23,9 +23,15 @@ public class CityController extends BaseController<com.react.db.entity.City, Cit
     }
 
     //todo: TEST ME
-    @RequestMapping(value = "findAllStartsWith/{name}", method = RequestMethod.GET)
-    List<City> findAllStartsWith(@PathVariable("name") String name) throws UnknownHostException {
-        return ConvertEntitiesToModels(service.findAllStartsWith(name));
+    @RequestMapping(value = "findAllStartsWith/{name}/{caseSensitive}", method = RequestMethod.GET)
+    List<City> findAllStartsWith(@PathVariable("name") String name, @PathVariable("caseSensitive") Boolean caseSensitive) throws UnknownHostException {
+        return ConvertEntitiesToModels(service.findAllStartsWith(name, caseSensitive));
+    }
+
+    //todo: TEST ME
+    @RequestMapping(value = "findAllContains/{name}/{caseSensitive}", method = RequestMethod.GET)
+    List<City> findAllContains(@PathVariable("name") String name, @PathVariable("caseSensitive") Boolean caseSensitive) throws UnknownHostException {
+        return ConvertEntitiesToModels(service.findAllContains(name, caseSensitive));
     }
 
     //todo: TEST ME
@@ -36,6 +42,6 @@ public class CityController extends BaseController<com.react.db.entity.City, Cit
 
     @ExceptionHandler
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public void handleCityNotFound(CityNotFoundException ex) {
+    private void handleCityNotFound(CityNotFoundException ex) {
     }
 }
