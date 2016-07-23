@@ -20,12 +20,12 @@ public class CityServiceImpl implements CityService {
     }
 
     @Override
-    public List<City> findAllStartsWith(String name) throws UnknownHostException {
-        return repository.findAllStartsWith(name);
+    public List<City> findAllStartsWith(String name, Boolean caseSensitive) throws UnknownHostException {
+        return repository.findAllStartsWith(name, caseSensitive);
     }
 
     @Override
-    public List<City> findAllContains(String name) {
-        return null;
+    public List<City> findAllContains(String name, Boolean caseSensitive) throws UnknownHostException {
+        return repository.findAllContains(name, caseSensitive);
     }
 }

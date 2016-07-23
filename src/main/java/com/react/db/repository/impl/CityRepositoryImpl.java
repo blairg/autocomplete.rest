@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 @Repository
-public class CityRepositoryImpl implements CityRepository {
+class CityRepositoryImpl implements CityRepository {
 
     @Autowired
     private final DBCollection cityCollection;
@@ -22,13 +22,47 @@ public class CityRepositoryImpl implements CityRepository {
     }
 
     @Override
-    public List<City> findAllStartsWith(String name) {
+    public List<City> findAllStartsWith(String name, Boolean caseSensitive) {
 
-        List<City> cities = new ArrayList<>();
-
+        List<City> cities;
         BasicDBObject query = new BasicDBObject();
-        query.put("name", Pattern.compile(Pattern.quote(name)));
+        String searchString = ".*" + name;
+
+        if(caseSensitive){
+            query.put("name", Pattern.compile(searchString));
+        }
+        else{
+            query.put("name", Pattern.compile(searchString, Pattern.CASE_INSENSITIVE));
+        }
+
         DBCursor cursor = cityCollection.find(query);
+        cities = ParseCities(cursor);
+
+        return cities;
+    }
+
+    @Override
+    public List<City> findAllContains(String name, Boolean caseSensitive) {
+
+        List<City> cities;
+        BasicDBObject query = new BasicDBObject();
+        String searchString = ".*" + name + ".*";
+
+        if(caseSensitive){
+            query.put("name", Pattern.compile(searchString));
+        }
+        else{
+            query.put("name", Pattern.compile(searchString, Pattern.CASE_INSENSITIVE));
+        }
+
+        DBCursor cursor = cityCollection.find(query);
+        cities = ParseCities(cursor);
+
+        return cities;
+    }
+
+    private List<City> ParseCities(DBCursor cursor){
+        List<City> cities = new ArrayList<>();
 
         try {
             while (cursor.hasNext()) {
@@ -40,11 +74,6 @@ public class CityRepositoryImpl implements CityRepository {
         }
 
         return cities;
-    }
-
-    @Override
-    public List<City> findAllContains(String name) {
-        return null;
     }
 
 }
