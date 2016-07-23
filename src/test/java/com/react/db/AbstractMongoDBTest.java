@@ -2,15 +2,29 @@ package com.react.db;
 
 import com.github.fakemongo.Fongo;
 import com.mongodb.*;
+import com.react.Application;
 import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = {Application.class})
 public class AbstractMongoDBTest extends TestCase {
-
 
     private MongoClient _mongo;
     private DBCollection _dbCollection;
+
+    public Mongo getMongo() {
+        return _mongo;
+    }
+
+    public DBCollection getCollection() {
+        return _dbCollection;
+    }
 
     @Override
     @Before
@@ -31,11 +45,8 @@ public class AbstractMongoDBTest extends TestCase {
         _dbCollection = null;
     }
 
-    public Mongo getMongo() {
-        return _mongo;
-    }
-
-    public DBCollection getCollection() {
-        return _dbCollection;
+    @Test
+    public void DummyTestToAllowThisToBeUsedForInheritance() {
+        assertEquals(1, 1);
     }
 }
