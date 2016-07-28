@@ -1,4 +1,4 @@
-package com.react.db;
+package com.react.data;
 
 import com.github.fakemongo.Fongo;
 import com.mongodb.*;
@@ -46,7 +46,7 @@ public class AbstractMongoDBTest extends TestCase {
     }
 
     @Test
-    public void DummyTestToAllowThisToBeUsedForInheritance() {
+    public void DummyTestToAllowThisClassToBeUsedForInheritance() {
         assertEquals(1, 1);
     }
 }

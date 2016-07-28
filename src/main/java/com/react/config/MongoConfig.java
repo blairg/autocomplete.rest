@@ -54,9 +54,11 @@ public class MongoConfig {
 
     @Autowired
     @Bean(name="cityCollection")
-    public DBCollection CityCollection() throws UnknownHostException {
+    public DBCollection cityCollection() throws UnknownHostException {
         MongoClient mongoClient = new MongoClient(mongoHost, Integer.parseInt(mongoPort));
         DB database = mongoClient.getDB(mongoDatabase);
         return database.getCollection(cityCollection);
     }
+
+
 }

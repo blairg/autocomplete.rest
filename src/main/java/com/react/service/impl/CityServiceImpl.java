@@ -1,7 +1,7 @@
 package com.react.service.impl;
 
-import com.react.db.entity.City;
-import com.react.db.repository.CityRepository;
+import com.react.data.entity.City;
+import com.react.data.repository.CityRepository;
 import com.react.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

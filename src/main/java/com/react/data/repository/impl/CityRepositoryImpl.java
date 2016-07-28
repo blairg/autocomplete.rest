@@ -1,8 +1,8 @@
-package com.react.db.repository.impl;
+package com.react.data.repository.impl;
 
 import com.mongodb.*;
-import com.react.db.entity.City;
-import com.react.db.repository.CityRepository;
+import com.react.data.entity.City;
+import com.react.data.repository.CityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

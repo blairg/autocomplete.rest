@@ -1,4 +1,4 @@
-package com.react.controller.models;
+package com.react.controller.model;
 
 import org.springframework.data.annotation.Id;
 
