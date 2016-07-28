@@ -29,6 +29,7 @@ ext {
 
 repositories {
 	mavenCentral()
+	jcenter()
 }
 
 dependencies {
@@ -38,10 +39,11 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-devtools')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile(group: 'com.jayway.jsonpath', name: 'json-path', version: '0.8.1')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
-	//testCompile(group: "de.flapdoodle.embed", name: "de.flapdoodle.embed.mongo", version: "1.50.3")
 	testCompile(group: 'com.github.fakemongo', name: 'fongo', version: '1.6.5')
+	testCompile('org.mockito:mockito-core:1.+')
 }
 
 

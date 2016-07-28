@@ -1,4 +1,4 @@
-package com.react.db.entity;
+package com.react.data.entity;
 
 import org.junit.Test;
 
