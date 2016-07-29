@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cdebe8b-9402-457c-b3a7-0c4b1b371bbb" name="Default" comment="Updated .gitignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/cache.properties.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/fileHashes.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/fileSnapshots.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/outputFileStates.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/taskArtifacts.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.12/taskArtifacts/cache.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/react/Application.class" afterPath="$PROJECT_DIR$/build/classes/main/com/react/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/autocomplete.rest_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/autocomplete.rest_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/autocomplete.rest_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/autocomplete.rest_test.iml" />
+    <list default="true" id="5cdebe8b-9402-457c-b3a7-0c4b1b371bbb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/react/controller/converter/impl/CityConverterImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/binary/test/output.bin" afterPath="$PROJECT_DIR$/build/test-results/binary/test/output.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/binary/test/output.bin.idx" afterPath="$PROJECT_DIR$/build/test-results/binary/test/output.bin.idx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/application.properties" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/react/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/react/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/react/config/ApplicationConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/react/config/ApplicationConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/react/controller/rest/CityController.java" afterPath="$PROJECT_DIR$/src/main/java/com/react/controller/rest/CityController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/react/data/repository/impl/CityRepositoryImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/react/data/repository/impl/CityRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/react/service/impl/CityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/react/service/impl/CityServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
     </list>
     <ignored path="autocomplete.rest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +44,50 @@
           <activation />
         </task>
         <projects_view>
-          <tree_state />
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="autocomplete.rest" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Run Configurations" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.RunConfigurationsNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="autocomplete.rest" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="autocomplete.rest" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Source Sets" />
+                <option name="myItemType" value="org.jetbrains.plugins.gradle.service.project.view.GradleViewContributor$SourceSetsNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
         </projects_view>
       </state>
     </system>
@@ -72,41 +106,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/react/Application.java">
+      <file leaf-file-name="CityServiceImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/react/service/impl/CityServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/react/config/MongoConfig.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="328">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/react/config/ApplicationConfig.java">
+      <file leaf-file-name="CityControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/react/controller/rest/rest/CityControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="163">
+              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="63" selection-end-column="133" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ehcache.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="circle.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/circle.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CityConverterImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/react/controller/converter/impl/CityConverterImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="79" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ehcache.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,8 +202,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -389,7 +443,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1469818392000" />
+        <entry key="$PROJECT_DIR$" value="1469829624000" />
         <entry key="$PROJECT_DIR$/../springboot/rest" value="1463177458000" />
       </map>
     </option>
@@ -561,7 +615,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/react/service/services/ICityService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/react/rest/controllers/models/CityTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/react/data/repositories/impl/CityRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/react/data/repositories/impl/BaseRepository.java" />
@@ -588,7 +641,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/react/db/repository/impl/CityRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/test/unit/java/com.react/ApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/test/integration/java/com/react/controller/rest/rest/CityControllerTest.java" />
-        <option value="$PROJECT_DIR$/circle.yml" />
         <option value="$PROJECT_DIR$/src/test/java/com/react/db/AbstractMongoDBTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/react/db/repository/impl/CityRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/react/service/impl/CityServiceImplTest.java" />
@@ -605,13 +657,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/react/config/ehcache.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/react/controller/rest/CityController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/react/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/react/config/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/react/data/repository/impl/CityRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/react/service/impl/CityServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/com/react/controller/converter/impl/CityConverterImplTest.java" />
+        <option value="$PROJECT_DIR$/circle.yml" />
       </list>
     </option>
   </component>
@@ -683,6 +737,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autocomplete.rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autocomplete.rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -730,11 +798,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.react.controller.converter.impl" />
       <recent name="com.react.service.impl" />
       <recent name="com.react.controller.models" />
       <recent name="com.react.controller.rest" />
       <recent name="com.react.db.repository.impl" />
-      <recent name="com.react.db.entity" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.react.rest.exceptionHandlers" />
@@ -756,31 +824,20 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration default="false" name="autocomplete.rest [:test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
+  <component name="RunManager" selected="Gradle.Tests in 'autocomplete.rest_test'">
+    <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.react.Application" />
+      <module name="autocomplete.rest_main" />
+      <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CityRepositoryImplTest.findAllStartsWithShouldNotFindPartialMatchOfBarnsAsNotInDatabaseCaseInsensitive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration default="false" name="Tests in 'autocomplete.rest_test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.react.data.repository.impl.CityRepositoryImplTest.findAllStartsWithShouldNotFindPartialMatchOfBarnsAsNotInDatabaseCaseInsensitive&quot;" />
+        <option name="scriptParameters" value="--tests *" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -794,12 +851,31 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="false" name="Tests in 'com.react.controller.handler'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration default="false" name="CityConverterImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests com.react.controller.handler.*" />
+        <option name="scriptParameters" value="--tests com.react.controller.converter.impl.CityConverterImplTest" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="CityConverterImplTest.convertEntitiesToModels" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.react.controller.converter.impl.CityConverterImplTest.convertEntitiesToModels&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -829,13 +905,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.react.Application" />
-      <module name="autocomplete.rest_main" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1425,24 +1494,23 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Gradle.run" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.autocomplete.rest [:test]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.CityRepositoryImplTest.findAllStartsWithShouldNotFindPartialMatchOfBarnsAsNotInDatabaseCaseInsensitive" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.Tests in 'com.react.controller.handler'" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.autocomplete.rest [bootRun]" />
-      <item index="5" class="java.lang.String" itemvalue="Spring Boot.Application" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.Tests in 'autocomplete.rest_test'" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.CityConverterImplTest" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.CityConverterImplTest.convertEntitiesToModels" />
+      <item index="5" class="java.lang.String" itemvalue="Gradle.autocomplete.rest [bootRun]" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.Tests in 'autocomplete.rest_test'" />
         <item index="1" class="java.lang.String" itemvalue="Gradle.autocomplete.rest [bootRun]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.autocomplete.rest [:test]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.Tests in 'com.react.controller.handler'" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.CityRepositoryImplTest.findAllStartsWithShouldNotFindPartialMatchOfBarnsAsNotInDatabaseCaseInsensitive" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.CityConverterImplTest.convertEntitiesToModels" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.CityConverterImplTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1469818416889" />
+    <option name="lastUpdateTimestamp" value="1469829658541" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1479,7 +1547,7 @@
       <workItem from="1468875412098" duration="3024000" />
       <workItem from="1469224400414" duration="12434000" />
       <workItem from="1469565600593" duration="4177000" />
-      <workItem from="1469730795018" duration="19805000" />
+      <workItem from="1469730795018" duration="21978000" />
     </task>
     <task id="LOCAL-00001" summary="Initia setup and package structure of REST service to return cities. To be used for the React Autocomplete String component.">
       <created>1463954486221</created>
@@ -1565,43 +1633,64 @@
       <option name="project" value="LOCAL" />
       <updated>1469746253682</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implemented logging and caching at the service layer.">
+      <created>1469827963137</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1469827963137</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added ehcore to fix issue with project not building">
+      <created>1469828926439</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1469828926439</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added artifacts for test results">
+      <created>1469830452650</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1469830452650</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CityRepositoryImplTest_findAllContainsShouldFindPartialMatchOfHuddersfieldCaseInsensitive - 2016.07.28 at 23h 25m 30s.xml">
-      <configuration name="CityRepositoryImplTest.findAllContainsShouldFindPartialMatchOfHuddersfieldCaseInsensitive" configurationId="GradleRunConfiguration" />
+    <history-entry file="CityConverterImplTest_convertEntitiesToModels - 2016.07.29 at 23h 26m 39s.xml">
+      <configuration name="CityConverterImplTest.convertEntitiesToModels" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="CityRepositoryImplTest_findAllContainsShouldFindPartialsMatchesOfHuCaseInsensitive - 2016.07.28 at 23h 26m 04s.xml">
-      <configuration name="CityRepositoryImplTest.findAllContainsShouldFindPartialsMatchesOfHuCaseInsensitive" configurationId="GradleRunConfiguration" />
+    <history-entry file="CityConverterImplTest_convertEntitiesToModels - 2016.07.29 at 23h 27m 25s.xml">
+      <configuration name="CityConverterImplTest.convertEntitiesToModels" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="CityRepositoryImplTest_findAllStartsWithShouldNotFindPartialMatchOfBarnsAsNotInDatabaseCaseInsensitive - 2016.07.28 at 23h 31m 06s.xml">
-      <configuration name="CityRepositoryImplTest.findAllStartsWithShouldNotFindPartialMatchOfBarnsAsNotInDatabaseCaseInsensitive" configurationId="GradleRunConfiguration" />
+    <history-entry file="Tests_in_'autocomplete_rest_test' - 2016.07.29 at 22h 47m 04s.xml">
+      <configuration name="Tests in 'autocomplete.rest_test'" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="CityTest_toStringEmptyConstructorShouldBuild - 2016.07.28 at 23h 28m 15s.xml">
-      <configuration name="CityTest.toStringEmptyConstructorShouldBuild" configurationId="GradleRunConfiguration" />
+    <history-entry file="Tests_in_'autocomplete_rest_test' - 2016.07.29 at 23h 02m 50s.xml">
+      <configuration name="Tests in 'autocomplete.rest_test'" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="autocomplete_rest_[_test] - 2016.07.28 at 23h 22m 17s.xml">
+    <history-entry file="Tests_in_'autocomplete_rest_test' - 2016.07.29 at 23h 29m 54s.xml">
+      <configuration name="Tests in 'autocomplete.rest_test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'autocomplete_rest_test' - 2016.07.29 at 23h 31m 54s.xml">
+      <configuration name="Tests in 'autocomplete.rest_test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="autocomplete_rest_[_test] - 2016.07.29 at 22h 43m 19s.xml">
       <configuration name="autocomplete.rest [:test]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="autocomplete_rest_[_test] - 2016.07.28 at 23h 22m 27s.xml">
+    <history-entry file="autocomplete_rest_[_test] - 2016.07.29 at 22h 43m 28s.xml">
       <configuration name="autocomplete.rest [:test]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="autocomplete_rest_[_test] - 2016.07.28 at 23h 29m 17s.xml">
+    <history-entry file="autocomplete_rest_[_test] - 2016.07.29 at 22h 46m 28s.xml">
       <configuration name="autocomplete.rest [:test]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="autocomplete_rest_[_test] - 2016.07.28 at 23h 31m 37s.xml">
-      <configuration name="autocomplete.rest [:test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="autocomplete_rest_[_test] - 2016.07.28 at 23h 31m 45s.xml">
-      <configuration name="autocomplete.rest [:test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="autocomplete_rest_[_test] - 2016.07.28 at 23h 41m 40s.xml">
+    <history-entry file="autocomplete_rest_[_test] - 2016.07.29 at 23h 31m 37s.xml">
       <configuration name="autocomplete.rest [:test]" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90782000" />
+    <option name="totallyTimeSpent" value="92955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1621,15 +1710,15 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.76222825" sideWeight="0.5071531" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819074" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7404891" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744566" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3396739" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819074" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32608697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32608697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16452074" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16094421" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16094421" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1664,7 +1753,10 @@
     <MESSAGE value="Added dummy test to allow class to be used for inheritance" />
     <MESSAGE value="Created tests for the restful controller. Got code coverage for API up to 92%." />
     <MESSAGE value="Updated .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated .gitignore" />
+    <MESSAGE value="Implemented logging and caching at the service layer." />
+    <MESSAGE value="added ehcore to fix issue with project not building" />
+    <MESSAGE value="Added artifacts for test results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added artifacts for test results" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1680,7 +1772,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/react/service/impl/CityServiceTest.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.6.RELEASE/233683d43b9f874461dfef7ba1ae0f5a65575930/spring-aop-4.2.6.RELEASE-sources.jar!/org/springframework/aop/target/SingletonTargetSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -1888,26 +1979,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/react/service/impl/CityServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/react/controller/converter/impl/CityConverterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1952,14 +2027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circle.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-cache/1.3.5.RELEASE/28a1f2becc8495fb15c49c0ad3ea580a39211965/spring-boot-starter-cache-1.3.5.RELEASE.jar!/META-INF/maven/org.springframework.boot/spring-boot-starter-cache/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1972,14 +2039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/react/controller/rest/rest/CityControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="88" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="88" />
           <folding />
         </state>
       </provider>
@@ -2004,14 +2063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="41" column="78" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
           <folding />
         </state>
       </provider>
@@ -2066,8 +2117,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/react/controller/rest/rest/CityControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="63" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/react/controller/converter/impl/CityConverterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/react/service/impl/CityServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/react/controller/converter/impl/CityConverterImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="79" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
