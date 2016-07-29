@@ -40,6 +40,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-devtools')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile(group: 'com.jayway.jsonpath', name: 'json-path', version: '0.8.1')
+	compile(group: 'net.sf.ehcache', name: 'ehcache-core', version: '2.6.11')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
 	testCompile(group: 'com.github.fakemongo', name: 'fongo', version: '1.6.5')
