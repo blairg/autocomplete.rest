@@ -1,0 +1,39 @@
+version: '2'
+services:
+
+  #proxy:
+    #container_name: proxy
+    #build:
+      #context: .
+      #dockerfile: Dockerfile-proxy
+    #ports:
+     # - '8080:80'
+   # volumes:
+     # - ./files/nginx:/data/nginx
+    #links:
+      #- blog-api
+
+  autocomplete-rest:
+    container_name: autocomplete-rest
+    image: autocomplete-rest
+    links:
+     - mongodb-dev
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+
+  mongodb-dev:
+    container_name: mongodb-dev
+    image: mongo:3
+    ports:
+      - 27017:27017
+    expose:
+      - 27017
+    volumes:
+      - /Users/bga11/mongodockerdata:/data/db
+
+
+
+
+

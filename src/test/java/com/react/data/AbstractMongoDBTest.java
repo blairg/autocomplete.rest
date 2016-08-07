@@ -1,7 +1,10 @@
 package com.react.data;
 
 import com.github.fakemongo.Fongo;
-import com.mongodb.*;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.Mongo;
+import com.mongodb.MongoClient;
 import com.react.Application;
 import junit.framework.TestCase;
 import org.junit.After;
@@ -10,9 +13,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = {Application.class})
+@WebAppConfiguration
 public class AbstractMongoDBTest extends TestCase {
 
     private MongoClient _mongo;

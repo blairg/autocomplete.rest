@@ -4,6 +4,7 @@ import com.react.Application;
 import com.react.controller.converter.CityConverter;
 import com.react.controller.rest.CityController;
 import com.react.data.entity.City;
+import com.react.service.CacheService;
 import com.react.service.CityService;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,6 +12,7 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.boot.actuate.metrics.GaugeService;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -43,6 +45,12 @@ public class CityControllerTest {
     @Mock
     CityConverter cityConverterMock;
 
+    @Mock
+    GaugeService gaugeServiceMock;
+
+    @Mock
+    CacheService cacheServiceMock;
+
     @InjectMocks
     private CityController cityController;
 
@@ -67,6 +75,8 @@ public class CityControllerTest {
         Boolean caseSensitive = true;
 
         //when
+        when(cacheServiceMock.get("CityController.findAllStartsWith-times")).thenReturn("0");
+        when(cacheServiceMock.get("CityController.findAllStartsWith-totalTimeTaken")).thenReturn("0");
         when(cityServiceMock.findAllStartsWith(nameToFind, caseSensitive)).thenReturn(citiesFromService);
         when(cityConverterMock.ConvertEntitiesToModels(citiesFromService)).thenReturn(citiesAsModel);
 
@@ -77,6 +87,8 @@ public class CityControllerTest {
                 .andExpect(jsonPath("$[0].name", is(citiesFromService.get(0).getName())))
                 .andExpect(jsonPath("$[1].name", is(citiesFromService.get(1).getName())));
 
+        verify(cacheServiceMock, times(1)).get("CityController.findAllStartsWith-times");
+        verify(cacheServiceMock, times(1)).get("CityController.findAllStartsWith-totalTimeTaken");
         verify(cityServiceMock, times(1)).findAllStartsWith(nameToFind, caseSensitive);
         verify(cityConverterMock, times(1)).ConvertEntitiesToModels(citiesFromService);
     }
@@ -98,6 +110,8 @@ public class CityControllerTest {
         Boolean caseSensitive = false;
 
         //when
+        when(cacheServiceMock.get("CityController.findAllContains-times")).thenReturn("0");
+        when(cacheServiceMock.get("CityController.findAllContains-totalTimeTaken")).thenReturn("0");
         when(cityServiceMock.findAllContains(nameToFind, caseSensitive)).thenReturn(citiesFromService);
         when(cityConverterMock.ConvertEntitiesToModels(citiesFromService)).thenReturn(citiesAsModel);
 
@@ -109,6 +123,8 @@ public class CityControllerTest {
                 .andExpect(jsonPath("$[1].name", is(citiesFromService.get(1).getName())))
                 .andExpect(jsonPath("$[2].name", is(citiesFromService.get(2).getName())));
 
+        verify(cacheServiceMock, times(1)).get("CityController.findAllContains-times");
+        verify(cacheServiceMock, times(1)).get("CityController.findAllContains-totalTimeTaken");
         verify(cityServiceMock, times(1)).findAllContains(nameToFind, caseSensitive);
         verify(cityConverterMock, times(1)).ConvertEntitiesToModels(citiesFromService);
     }
